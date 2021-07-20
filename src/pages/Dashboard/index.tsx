@@ -31,7 +31,7 @@ function Dashboard() {
   }, [])
 
 
-  const handleAddFood = async (food: Food) => {
+  const handleAddFood = async (food: FoodType) => {
     try {
       const response = await api.post('/foods', {
         ...food,
