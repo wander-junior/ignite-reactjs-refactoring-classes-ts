@@ -5,19 +5,13 @@ import { Form } from './styles';
 import Modal from '../Modal';
 import Input from '../Input';
 
-import { FormHandles, FormProps } from '@unform/core';
+import { FormHandles } from '@unform/core';
+import { FormDataProps } from '../../types';
 
 interface ModalAddFoodProps {
   isOpen: boolean
   setIsOpen: () => void
   handleAddFood: (data: FormDataProps) => void
-}
-
-interface FormDataProps extends FormProps {
-  image: string;
-  name: string;
-  price: string;
-  description: string;
 }
 
 function ModalAddFood({ isOpen, setIsOpen, handleAddFood }: ModalAddFoodProps) {

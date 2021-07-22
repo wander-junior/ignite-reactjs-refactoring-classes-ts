@@ -6,17 +6,8 @@ import Food from '../../components/Food';
 import ModalAddFood from '../../components/ModalAddFood';
 import ModalEditFood from '../../components/ModalEditFood';
 import { FoodsContainer } from './styles';
-import { FormProps } from '@unform/core';
 
-
-import { FoodType } from '../../types';
-
-interface FormDataProps extends FormProps {
-  image: string;
-  name: string;
-  price: string;
-  description: string;
-}
+import { FoodType, FormDataProps } from '../../types';
 
 function Dashboard() {
   const [foods, setFoods] = useState<FoodType[]>([]);

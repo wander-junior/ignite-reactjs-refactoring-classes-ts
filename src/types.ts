@@ -1,3 +1,6 @@
+import { FormProps } from '@unform/core';
+
+
 export interface FoodType {
     id: number,
     name: string,
@@ -6,3 +9,11 @@ export interface FoodType {
     available: boolean,
     image: string
 }
+
+export interface FormDataProps extends FormProps {
+    image: string;
+    name: string;
+    price: string;
+    description: string;
+  }
+  

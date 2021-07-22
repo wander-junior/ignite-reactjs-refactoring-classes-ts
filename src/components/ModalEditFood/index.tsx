@@ -5,16 +5,9 @@ import { Form } from './styles';
 import Modal from '../Modal';
 import Input from '../Input';
 
-import { FormHandles, FormProps } from '@unform/core';
+import { FormHandles } from '@unform/core';
 
-import { FoodType } from '../../types';
-
-interface FormDataProps extends FormProps {
-  image: string;
-  name: string;
-  price: string;
-  description: string;
-}
+import { FoodType, FormDataProps } from '../../types';
 
 interface ModalEditFoodProps {
   isOpen: boolean
