@@ -46,7 +46,7 @@ function Dashboard() {
     }
   }
 
-  const handleUpdateFood = async (food: FoodType) => {
+  const handleUpdateFood = async (food: FormDataProps) => {
     try {
       const foodUpdated = await api.put(
         `/foods/${editingFood.id}`,
